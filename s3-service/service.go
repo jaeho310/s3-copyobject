@@ -13,7 +13,7 @@ var s3Client *s3.Client
 
 func init() {
 	log.Println("load config")
-	cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithSharedConfigProfile("playground"))
+	cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithSharedConfigProfile("your-profile"))
 	if err != nil {
 		log.Fatal(err)
 	}
